@@ -1,0 +1,94 @@
+*{
+  /*delete all the indesirable space*/
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.App {
+  /*make in the whole wage dimentions and color*/
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #dddcdc;
+  height: 100vh;
+  border: none;
+}
+
+header{
+  /*designing the header in the top of the page*/
+  background: #2eb4b2;
+  height: 100px;
+  margin: 0;
+  position: relative;
+  top: -50px;
+}
+h1, input, label{
+  background: none;
+}
+h1{
+  margin-top: 50px;
+  color: #fff;
+  position: relative;
+  top: 50%;
+}
+.box{
+  /*the white box that handel the input*/
+  margin-top: 1%;
+  background: #fff;
+  width: 20%;
+  height: 170px;
+  position: relative;
+  left: 40%;
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+}
+input{
+  /*the radio color*/
+  accent-color: yellow;
+}
+.Arabic, .English{
+  /*the two language options*/
+  margin-bottom: 10px;
+  background: #ebeaea;
+  height: 40px;
+  width: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+button{
+  border: none;
+  background: #2eb4b2;
+  width: 110%;
+  height: 50px;
+  color: #fff;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 10%;
+}
+img{
+  width: 35px;
+  height: 35px;
+  margin-right: 1%;
+}
+img, label, input{
+  /*making distance between the elements*/
+  margin-left: 5%;
+}
+/*make it responsive on the small screens*/
+@media screen and (max-width: 1036px){
+  .box{
+    width: 30%;
+    top: 3%;
+  }
+}
+@media screen and (max-width: 628px){
+  .box{
+    width: 70%;
+    left: 15%;
+  }
+}
